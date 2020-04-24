@@ -1,0 +1,49 @@
+body{
+    background-color: rgba(169, 169, 169, 0.452);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    height: 100vh;
+}
+.loadbars1, .loadbars2{
+    width:max-content;
+    height: max-content;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.bar{
+    background:mediumspringgreen;
+    width:20px;
+    height: 80px;
+    margin:10px;
+    border-radius: 30px;
+    animation: blink infinite ease-in-out;
+    animation-duration: 1000ms;
+}
+@keyframes blink{
+    0%{
+        transform: scaleY(0.2) scaleX(0);
+        background:rgba(0, 0, 255, 0.575);
+    }
+    100%{
+        transform: scaleY(1) scaleX(1);
+    }
+}
+.bar1{
+    animation-delay: 200ms;
+}
+.bar2 {
+    animation-delay: 400ms;
+}
+.bar3 {
+    animation-delay: 600ms;
+}
+.bar4 {
+    animation-delay: 800ms;
+}
+.bar5 {
+    animation-delay: 1000ms ;
+}
+
